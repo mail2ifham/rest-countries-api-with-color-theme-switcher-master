@@ -1,0 +1,49 @@
+@import "../../vatiable.css";
+
+.filter-drop-down {
+  position: relative;
+
+}
+
+.filter-drop-down > button {
+  padding: var(--padding-lg);
+  height: 55px;
+  display: flex;
+  border-radius: var(--border-radius);
+  width: 180px;
+  box-shadow: var(--box-shadow);
+}
+
+.drop-down-icon {
+  margin-left: auto;
+  font-size: large;
+}
+
+.drop-menu-content {
+  position: absolute;
+  list-style: none;
+  text-transform: capitalize;
+  margin-top: 10px;
+  line-height: 2;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  min-width: l;
+  width: 100%;
+  background: var(--theme-element);
+  z-index: 1;
+}
+.drop-down-item {
+  padding-left: var(--padding-lg);
+}
+.drop-down-item:nth-child(1) {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.drop-down-item:last-child {
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.drop-down-item:hover {
+  background: var(--theme-hover);
+  color: var(--theme-hover-text);
+  cursor: pointer;
+}

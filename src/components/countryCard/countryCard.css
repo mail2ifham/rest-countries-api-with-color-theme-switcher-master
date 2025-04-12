@@ -1,0 +1,39 @@
+@import "../../vatiable.css";
+
+.card-container > .card-image {
+  width: 100%;
+  height: 170px;
+  object-fit: fill;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.card-werpper {
+  
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  list-style: none;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding-bottom: var(--padding-xl);
+  background: var(--theme-element);
+  outline: 0;
+  transition: all 0.1s ease-in-out; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-werpper:hover {
+    bottom: 10px;
+    box-shadow: 1px 30px 10px rgba(0, 0, 0, 0.20);
+}
+
+.card-detail-container {
+  padding: var(--padding-xl);
+}
+
+.card-detail-container > .card-header {
+  padding-bottom: var(--padding-xl);
+}
+.card-detail-container > .card-details {
+  padding-bottom:  var(--padding-sm);
+}

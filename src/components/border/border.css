@@ -1,0 +1,7 @@
+@import "../../vatiable.css";
+
+.border-button{
+    padding: var(--padding-sm) var(--padding-md);
+    margin: var(--padding-sm);
+    box-shadow: var(--box-shadow)
+};

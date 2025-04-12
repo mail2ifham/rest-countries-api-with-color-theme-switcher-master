@@ -1,0 +1,15 @@
+@import "./vatiable.css";
+
+.app-wrapper {
+display: flex;
+flex-direction: column;
+
+}
+.app-container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-self: center;
+  align-items: center;
+  padding: 0  var(--padding-md);
+}

@@ -1,0 +1,46 @@
+@import "../../vatiable.css";
+
+.search-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  background: var(--theme-element);
+  transition: background-color 0.3s;
+}
+
+.search-bar > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 35px;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  outline: none;
+  border: 0;
+  color: var(--theme-input-text);
+  transition:color 0.3s;
+}
+
+.search-bar > input {
+  color: var(--theme-input-text);
+  width: 100%;
+  height: 55px;
+  padding-left: 75px;
+  outline: none;
+  border: none;
+  background: var(--theme-element);
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+

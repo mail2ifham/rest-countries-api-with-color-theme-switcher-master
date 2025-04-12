@@ -1,0 +1,78 @@
+@import "../../vatiable.css";
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.back-button-container {
+  width: 100%;
+}
+
+.back-button {
+  display: flex;
+  gap: 6px;
+  width: max-content;
+  border-radius: var(--border-radios);
+  box-shadow: var(--box-shadow);
+  padding: var(--padding-sm) var(--padding-xl);
+}
+
+.back-button:hover {
+  background: var(--theme-hover);
+  color: var(--theme-hover-text);
+}
+
+.flag {
+  width: 40%;
+  border-radius: var(--border-radius);
+}
+.flag > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+.details-container > .details-sub {
+  width: 50%;
+  padding: var(--padding-xl) 0 0 var(--padding-xl);
+}
+
+.details-font {
+  font-size: var(--details-page);
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .details-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .flag {
+    width: 100%;
+  }
+
+  .details-container > .details-sub {
+    width: 100%;
+    padding: var(--padding-xl) 0 0 0;
+  }
+}
+
+@media all and (max-width: 480px) {
+    .details-container {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+      }
+    
+      .flag {
+        width: 100%;
+      }
+      
+      .details-container > .details-sub {
+        width: 100%;
+        padding: var(--padding-xl) 0 0 0;
+      }
+}

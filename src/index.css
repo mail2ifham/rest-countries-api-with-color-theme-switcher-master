@@ -1,0 +1,37 @@
+@import "./vatiable.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  width: 100%;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  text-decoration: none;
+  color: var(--theme-text);
+  cursor: pointer;
+}
+
+#root {
+  width: 100%;
+}
+
+button {
+  outline: none;
+  appearance: none;
+  border: 0;
+  background: var(--theme-element);
+  color: var(--theme-text);
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s, color 0.3s;
+}

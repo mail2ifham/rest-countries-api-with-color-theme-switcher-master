@@ -1,0 +1,28 @@
+@import "../../vatiable.css";
+
+.details-sub-wrapper > h1 {
+  padding-bottom: var(--padding-xl);
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.details-sub-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--padding-xl);
+}
+.details-sub-container > div > * {
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-sm) 0;
+}
+
+.details-sub-container > p {
+  width: 50%;
+}
+
+
+@media all and (max-width: 480px) {
+  .details-sub-container {
+    flex-direction: column;
+    padding-bottom: var(--padding-xl);
+  }
+}

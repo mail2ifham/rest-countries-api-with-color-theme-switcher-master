@@ -1,0 +1,32 @@
+:root {
+  /* colors */
+
+  --Dark-Blue: hsl(209, 23%, 22%); /*(Dark Mode Elements) */
+  --Very-Dark-Blue-bg: hsl(207, 26%, 17%); /*(Dark Mode Background)*/
+
+  --Very-Dark-Blue-text: hsl(200, 15%, 8%); /*(Light Mode Text)*/
+
+  --Dark-Gray: hsl(0, 0%, 52%); /*(Light Mode Input)*/
+
+  --Very-Light-Gray: hsl(0, 0%, 98%); /* (Light Mode Background)*/
+
+  --White: hsl(0, 0%, 100%); /*(Dark Mode Text & Light Mode Elements)*/
+}
+
+[data-theme-dark-mode="false"] {
+    --theme-bg: var(--Very-Light-Gray);
+    --theme-element: var(--White);
+    --theme-text: var(--Very-Dark-Blue-text);
+    --theme-input-text:var(--Dark-Gray);
+    --theme-hover:var(--Dark-Blue);
+    --theme-hover-text:var(--White);
+}
+
+[data-theme-dark-mode="true"] {
+    --theme-bg: var(--Very-Dark-Blue-bg);
+    --theme-element: var(--Dark-Blue);
+    --theme-text: var(--White);
+    --theme-input-text:var(--White); 
+    --theme-hover:var(--White);
+    --theme-hover-text:var(--Dark-Blue);
+}
