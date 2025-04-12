@@ -6,7 +6,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router";
-import RootLayout from "./layout/rootLayout";
+import RootLayout from "./layout/RootLayout";
 import Details from "./page/details/Details";
 import { useEffect } from "react";
 import { useThemeStore } from "./store/themeStore";
