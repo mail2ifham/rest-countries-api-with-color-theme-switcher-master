@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./NavBar.css";
+import "./navBar.css";
 import { Link } from "react-router";
 import { useThemeStore } from "../../store/themeStore";
 import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md";
