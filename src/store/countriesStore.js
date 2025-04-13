@@ -52,20 +52,21 @@ export const useCountriesStore = create((set) => ({
   },
 
   fetchCountryDetails: async (countryCode) => {
-    set({ countryDetails: null, isLoading: true });
+    set({ countryDetails: null, isLoading: true, fetchError:null });
 
     try {
       const res = await fetch(
         `https://restcountries.com/v3.1/alpha/${countryCode}`
       );
       if (!res.ok) {
-        throw new Error("Unable to  load data");
+        throw new Error( "Failed to load country details");
       }
       const [data] = await res.json();
 
       set({ countryDetails: data, isLoading: false });
     } catch (e) {
       console.log(e.message);
+      set({ countryDetails: [], isLoading: false, fetchError:e.message });
     }
   },
 }));

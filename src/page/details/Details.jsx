@@ -1,22 +1,21 @@
 import React, { useEffect } from "react";
-import { useLocation, useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useCountriesStore } from "../../store/countriesStore";
 import { RxArrowLeft } from "react-icons/rx";
 import "./details.css";
 import DetailsSub from "../../components/detailsSub/DetailsSub";
 import Border from "../../components/border/Border";
 import Loading from "../loading/Loading";
+import NotFoundPage from "../notFoundPage/NotFoundPage";
 
 const Details = () => {
-  const location = useLocation();
   const navigate = useNavigate();
   const { countryCode } = useParams();
   const fetchCountryDetails = useCountriesStore(
     (state) => state.fetchCountryDetails
   );
   const countryDetails = useCountriesStore((state) => state.countryDetails);
-  const isLoading = useCountriesStore((state) => state.isLoading);
-  const setIsLoading = useCountriesStore((state) => state.setIsLoading);
+  const fetchError = useCountriesStore((state) => state.fetchError);
 
   useEffect(() => {
     fetchCountryDetails(countryCode);
@@ -25,8 +24,7 @@ const Details = () => {
   if (!countryDetails || !countryDetails.name) {
     return (
       <div>
-        {" "}
-        <Loading />
+       {fetchError ? <NotFoundPage/> : <Loading />}
       </div>
     );
   }

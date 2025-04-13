@@ -4,6 +4,8 @@ import CountryCard from "../countryCard/CountryCard";
 import "./allCountriesView.css";
 import { Link } from "react-router";
 import Loading from "../../page/loading/Loading";
+import NotFoundPage from "../../page/notFoundPage/NotFoundPage";
+import ErrorPage from "../../page/errorPage/ErrorPage";
 
 const AllCountriesView = () => {
   const { countries, filteredRegion, fetchCountries, search, getFilterdList,fetchError } =
@@ -28,7 +30,7 @@ const AllCountriesView = () => {
   if (!filteredCounteries.length > 0) {
     return (
       <div>
-        {fetchError ? <h2 className="error-message">{fetchError}</h2> :<Loading />}
+        {fetchError ? <h2 className="error-message"><ErrorPage/> </h2> :<Loading />}
       </div>
     );
   }
