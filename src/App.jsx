@@ -10,6 +10,7 @@ import RootLayout from "./layout/RootLayout";
 import Details from "./page/details/Details";
 import { useEffect } from "react";
 import { useThemeStore } from "./store/themeStore";
+import NotFoundPage from "./page/notFoundPage/NotFoundPage";
 
 function App() {
   const isDarkMode = useThemeStore((state) => state.isDarkMode);
@@ -23,6 +24,7 @@ function App() {
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
         <Route path="/:countryCode" element={<Details />} />
+        <Route path="/*" element={<NotFoundPage />} />
       </Route>
     )
   );
