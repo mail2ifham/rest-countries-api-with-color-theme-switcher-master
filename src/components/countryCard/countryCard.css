@@ -33,7 +33,9 @@
 
 .card-detail-container > .card-header {
   padding-bottom: var(--padding-xl);
+  font-size: 1.2rem;
 }
 .card-detail-container > .card-details {
   padding-bottom:  var(--padding-sm);
 }
+
