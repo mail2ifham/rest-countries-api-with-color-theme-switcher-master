@@ -8,7 +8,6 @@ const Border = () => {
   const countryDetails = useCountriesStore((state) => state.countryDetails);
   const allCountries = useCountriesStore((state) => state.countries);
   const fetchCountries = useCountriesStore((state) => state.fetchCountries);
-  const setIsLoading = useCountriesStore((state) => state.setIsLoading);
 
   const borderCountries = countryDetails.borders;
   useEffect(() => {
@@ -22,7 +21,6 @@ const Border = () => {
     });
 
   const handleBorderNav = (country) => {
-    // setIsLoading(true)
       navigate(`/${country}`);
   };
   return (
