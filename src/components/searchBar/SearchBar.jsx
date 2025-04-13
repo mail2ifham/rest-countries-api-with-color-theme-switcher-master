@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import "./SearchBar.css";
+import "./searchBar.css";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import { useCountriesStore } from "../../store/countriesStore";
 import { useNavigate } from "react-router";
