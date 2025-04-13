@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/mail2ifham/rest-countries-api-with-color-theme-switcher-master](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/mail2ifham/rest-countries-api-with-color-theme-switcher-master
+- Live Site URL: https://wondrous-youtiao-32a4fa.netlify.app/
 
 ## My process
 
@@ -72,6 +72,8 @@ In future projects, I want to focus on:
 
 - [React Router Documentation](https://reactrouter.com/) - Helped me understand dynamic routing.
 - [Zustand Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction) - A simple and lightweight state management library.
+- [React-icon](https://react-icons.github.io/react-icons/) - A simple yet powerfull icon library.
+- [React-icon](https://react-icons.github.io/react-icons/) - A simple yet powerfull icon library.
 
 ## Author
 
