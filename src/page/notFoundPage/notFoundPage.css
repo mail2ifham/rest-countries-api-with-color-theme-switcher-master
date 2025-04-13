@@ -1,0 +1,28 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found > .not-found-icon {
+  font-size: 7rem;
+  color: var(--theme-text);
+  margin: 24px 0;
+
+  /* width: 100%; */
+}
+
+.not-found > p {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.not-found > button {
+  box-shadow: var(--box-shadow);
+  padding: var(--padding-md) var(--padding-lg);
+  font-size: 1.1rem;
+  margin-top: 24px;
+  border-radius: var(--border-radius);
+}
